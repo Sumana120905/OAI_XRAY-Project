@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv("data/labels/oai_labels.txt", sep="\t", low_memory=False)
 
-df = df[["subjectkey", "visit", "side", "xrkl"]]
+df = df[["subjectkey", "visit", "side", "xrkl", "barcode"]]
 
 df = df[df["xrkl"].str.strip().isin(["0","1","2","3","4"])]
 
