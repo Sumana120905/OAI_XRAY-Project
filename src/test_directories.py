@@ -7,7 +7,6 @@ data = []
 
 for root, dirs, files in os.walk(root_dir):
     for file in files:
-        2
         if file.isdigit():
 
             image_path = os.path.join(root, file)
